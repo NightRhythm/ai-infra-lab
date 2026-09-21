@@ -1,0 +1,14 @@
+# 忽略 models 目录下的所有子文件和子目录
+models/*
+# 但保留说明文件，使 models/ 目录结构能被 Git 追踪
+!models/README.md
+!models/.gitkeep
+
+# Python 运行时生成文件
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# 3. 评测实验生成的大体积临时文件（按需）
+# 如果 results/ 下有超大 csv 或日志，可单独在此排除
